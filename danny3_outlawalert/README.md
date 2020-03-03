@@ -4,5 +4,5 @@ This is a remake of the esx_outlawalert by Jager_bom. Feel free to do as you lik
 ## Credits
 
 Credits:
-Jager_bom for his esx_outlawalert
-Stroudy for WF_Alerts   https://forum.cfx.re/t/dev-release-standalone-wf-alerts/1029331
+- Jager_bom for his esx_outlawalert                        
+- Stroudy for WF_Alerts   https://forum.cfx.re/t/dev-release-standalone-wf-alerts/1029331
