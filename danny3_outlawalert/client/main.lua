@@ -78,10 +78,10 @@ end
 
 
 RegisterNetEvent('esx_outlawalert:outlawNotify')
-AddEventHandler('esx_outlawalert:outlawNotify', function(type, data)
+AddEventHandler('esx_outlawalert:outlawNotify', function(type, data, length)
 	if isPlayerWhitelisted then
-		SendNUIMessage({action = 'display', style = type, info = data})
-		TriggerServerEvent('InteractSound_SV:PlayOnAll', 'alert', 00.01)
+		SendNUIMessage({action = 'display', style = type, info = data, length = length})
+    	PlaySound(-1, "Event_Start_Text", "GTAO_FM_Events_Soundset", 0, 0, 1)
 	end
 end)
 
