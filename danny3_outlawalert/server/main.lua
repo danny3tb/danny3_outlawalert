@@ -7,7 +7,7 @@ AddEventHandler('esx_outlawalert:carJackInProgress', function(targetCoords, stre
     mytype = 'police'
     data = {["code"] = '10-16', ["name"] = 'Theft Of A '..vehicleLabel..'.', ["loc"] = streetName}
     length = 3500
-    TriggerClientEvent('esx_outlawalert:outlawNotify', source, mytype, data, length)
+    TriggerClientEvent('esx_outlawalert:outlawNotify', -1, mytype, data, length)
     TriggerClientEvent('esx_outlawalert:combatInProgress', -1, targetCoords)
     TriggerClientEvent('esx_outlawalert:carJackInProgress', -1, targetCoords)
 end, false)
@@ -17,7 +17,7 @@ AddEventHandler('esx_outlawalert:combatInProgress', function(targetCoords, stree
 	mytype = 'police'
     data = {["code"] = '10-10', ["name"] = 'fight in progress', ["loc"] = streetName}
     length = 3500
-    TriggerClientEvent('esx_outlawalert:outlawNotify', source, mytype, data, length)
+    TriggerClientEvent('esx_outlawalert:outlawNotify', -1, mytype, data, length)
     TriggerClientEvent('esx_outlawalert:combatInProgress', -1, targetCoords)
 end, false)
 
@@ -26,7 +26,7 @@ AddEventHandler('esx_outlawalert:gunshotInProgress', function(targetCoords, stre
 	mytype = 'police'
     data = {["code"] = '10-11', ["name"] = 'gunshot in progress', ["loc"] = streetName}
     length = 3500
-    TriggerClientEvent('esx_outlawalert:outlawNotify', source, mytype, data, length)
+    TriggerClientEvent('esx_outlawalert:outlawNotify', -1, mytype, data, length)
     TriggerClientEvent('esx_outlawalert:gunshotInProgress', -1, targetCoords)
 end, false)
 
